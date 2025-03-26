@@ -17,7 +17,7 @@ const Comment = ({ comment, onLike, onEdit, onDelete }) => {
         const token = localStorage.getItem("access_token"); 
   
         const res = await axios.get(
-          ` http://localhost:9080/api/user/${comment.userId}`,
+          ` https://blog-system-n8p8.onrender.com/api/user/${comment.userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // Attach token
@@ -44,7 +44,7 @@ const Comment = ({ comment, onLike, onEdit, onDelete }) => {
       const token = localStorage.getItem("access_token"); 
   
       const res = await axios.put(
-        `http://localhost:9080/api/comment/editcomment/${comment._id}`,//render
+        `https://blog-system-n8p8.onrender.com/api/comment/editcomment/${comment._id}`,//render
         { content: editedContent },
         {
           headers: {

@@ -23,7 +23,7 @@ const CreatePost = () => {
       const token = localStorage.getItem("access_token");
   
       const res = await axios.post(
-        " http://localhost:9080/api/post/create",
+        "https://blog-system-n8p8.onrender.com/api/post/create",
         postData,
         {
           headers: {

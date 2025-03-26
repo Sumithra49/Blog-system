@@ -24,7 +24,7 @@ const CommentSection = ({ postId }) => {
       const token = localStorage.getItem("access_token"); 
   
       const res = await axios.post(
-        " http://localhost:9080/api/comment/create",
+        "https://blog-system-n8p8.onrender.com/api/comment/create",
         {
           content: comment,
           postId,
@@ -52,7 +52,7 @@ const CommentSection = ({ postId }) => {
         const token = localStorage.getItem("access_token");
   
         const res = await axios.get(
-          `https://sarvjyoti-writes-4.onrender.com/api/comment/getcomment/${postId}`,//render
+          `https://blog-system-n8p8.onrender.com/api/comment/getcomment/${postId}`,//render
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ const CommentSection = ({ postId }) => {
       const token = localStorage.getItem("access_token");
   
       const res = await axios.put(
-        `http://localhost:9080/api/comment/likecomment/${commentId}`,//render
+        `https://blog-system-n8p8.onrender.com/api/comment/likecomment/${commentId}`,//render
         {},
         {
           headers: {
@@ -111,7 +111,7 @@ const CommentSection = ({ postId }) => {
       const token = localStorage.getItem("access_token");
   
       const res = await axios.put(
-        `http://localhost:9080/api/comment/editcomment/${comment._id}`,//render
+        `https://blog-system-n8p8.onrender.com/api/comment/editcomment/${comment._id}`,//render
         { content: editedContent },
         {
           headers: {

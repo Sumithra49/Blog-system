@@ -16,7 +16,7 @@ const DashUsers = () => {
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem("access_token"); 
-        const res = await axios.get(` http://localhost:9080/api/user/getusers`, {
+        const res = await axios.get(` https://blog-system-n8p8.onrender.com/api/user/getusers`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -65,7 +65,7 @@ const DashUsers = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await axios.delete(
-        `http://localhost:9080/api/user/delete/${userIdToDelete}`,//render
+        `https://blog-system-n8p8.onrender.com/api/user/delete/${userIdToDelete}`,//render
         {
           headers: {
             Authorization: `Bearer ${token}`,

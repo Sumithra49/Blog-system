@@ -1,6 +1,6 @@
 import { Button } from 'flowbite-react';
-import image from '../assets/banner.png';
 import React from "react";
+import image from '../assets/banner.png';
 
 
 export default function CallToAction() {
@@ -14,7 +14,7 @@ export default function CallToAction() {
                 Checkout these resources.
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://medium.com/@sarvjyoti055" target='_blank' rel='noopener noreferrer'>
+                <a href="#" target='_blank' rel='noopener noreferrer'>
                     Go To
                 </a>
             </Button>

@@ -31,7 +31,7 @@ const DashSidebar = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await axios.post(
-        " http://localhost:9080/api/user/signout",//render
+        " https://blog-system-n8p8.onrender.com/api/user/signout",//render
         {},
         {
           headers: {

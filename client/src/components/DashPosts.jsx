@@ -17,7 +17,7 @@ const DashPosts = () => {
       try {
         const token = localStorage.getItem("access_token");
         const res = await axios.get(
-          ` http://localhost:9080/api/post/getposts?userId=${currentUser._id}`,
+          `https://blog-system-n8p8.onrender.com/api/post/getposts?userId=${currentUser._id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ const DashPosts = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await axios.get(
-        `http://localhost:9080/api/post/getposts?userId=${currentUser._id}&startIndex=${startIndex}`,//rendeer
+        `https://blog-system-n8p8.onrender.com/api/post/getposts?userId=${currentUser._id}&startIndex=${startIndex}`,//rendeer
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ const DashPosts = () => {
     try {
       const token = localStorage.getItem("access_token");
       const res = await axios.delete(
-        `http://localhost:9080/api/post/deletepost/${postIdToDelete}/${currentUser._id}`,//render
+        `https://blog-system-n8p8.onrender.com/api/post/deletepost/${postIdToDelete}/${currentUser._id}`,//render
         {
           headers: {
             Authorization: `Bearer ${token}`,

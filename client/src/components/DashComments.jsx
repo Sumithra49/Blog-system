@@ -15,7 +15,7 @@ const DashComments = () => {
       const fetchComments = async () => {
         try {
           const token = localStorage.getItem("access_token");
-          const res = await fetch(` http://localhost:9080/api/comment/getcomments`, {
+          const res = await fetch(` https://blog-system-n8p8.onrender.com/api/comment/getcomments`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -42,7 +42,7 @@ const DashComments = () => {
       try {
         const token = localStorage.getItem("access_token");
         const res = await fetch(
-          `http://localhost:9080/api/comment/getcomments?startIndex=${startIndex}`,//render
+          `https://blog-system-n8p8.onrender.com/api/comment/getcomments?startIndex=${startIndex}`,//render
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -66,7 +66,7 @@ const DashComments = () => {
       try {
         const token = localStorage.getItem("access_token");
         const res = await fetch(
-          `http://localhost:9080/api/comment/deleteComment/${commentIdToDelete}`,//render
+          `https://blog-system-n8p8.onrender.com/api/comment/deleteComment/${commentIdToDelete}`,//render
           {
             method: "DELETE",
             headers: {

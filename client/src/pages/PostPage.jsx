@@ -22,7 +22,7 @@ const PostPage = () => {
         const token = localStorage.getItem("access_token");
   
         const res = await axios.get(
-          ` http://localhost:9080/api/post/getposts?slug=${postSlug}`,
+          ` https://blog-system-n8p8.onrender.com/api/post/getposts?slug=${postSlug}`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // Send token in Authorization header
@@ -46,7 +46,7 @@ const PostPage = () => {
         const token = localStorage.getItem("access_token");
   
         const res = await axios.get(
-          `http://localhost:9080/api/post/getposts?limit=3`,//render
+          `https://blog-system-n8p8.onrender.com/api/post/getposts?limit=3`,//render
           {
             headers: {
               Authorization: `Bearer ${token}`, 

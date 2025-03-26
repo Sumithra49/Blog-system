@@ -26,7 +26,7 @@ const DashboardComponent = () => {
       try {
         const token = localStorage.getItem("access_token");
   
-        const res = await fetch(" http://localhost:9080/api/user/getusers?limit=5", {
+        const res = await fetch(" https://blog-system-n8p8.onrender.com/api/user/getusers?limit=5", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`, // Attach token
@@ -49,7 +49,7 @@ const DashboardComponent = () => {
       try {
         const token = localStorage.getItem("access_token");
   
-        const res = await fetch("http://localhost:9080/api/post/getposts?limit=5", {//render
+        const res = await fetch("https://blog-system-n8p8.onrender.com/api/post/getposts?limit=5", {//render
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ const DashboardComponent = () => {
       try {
         const token = localStorage.getItem("access_token");
   
-        const res = await fetch("http://localhost:9080/api/comment/getcomments?limit=5", {//render
+        const res = await fetch("https://blog-system-n8p8.onrender.com/api/comment/getcomments?limit=5", {//render
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

@@ -23,7 +23,7 @@ const UpdatePost = () => {
         const token = localStorage.getItem("access_token");
   
         const res = await axios.get(
-          `https://sarvjyoti-writes-4.onrender.com/api/post/getposts?postId=${postId}`,
+          `https://blog-system-n8p8.onrender.com/api/post/getposts?postId=${postId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`, 
@@ -52,7 +52,7 @@ const UpdatePost = () => {
       const token = localStorage.getItem("access_token");
   
       const res = await axios.put(
-        `http://localhost:9080/api/post/updatepost/${formData._id}/${currentUser._id}`,
+        `https://blog-system-n8p8.onrender.com/api/post/updatepost/${formData._id}/${currentUser._id}`,
         postData,
         {
           headers: {
